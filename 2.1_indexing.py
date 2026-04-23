@@ -47,6 +47,15 @@ df = pd.DataFrame({'Col1': [1, 2, 3, 4], 'Col2':[1, 3, 5, 8]}, index=interval_id
 print("Input DataFrame:\n",df)
 print("\nDataFrame Index Object Type:",df.index.dtype)
 print()
+
 # DatetimeIndex
+import pandas as pd
+# Create DatetimeIndex
+datetime_idx = pd.DatetimeIndex(["2020-01-01 10:00:00", "2020-02-01 11:00:00"])
+# Create a DataFrame with DatetimeIndex
+df = pd.DataFrame({'Col1': [1, 2], 'Col2':[1, 3]}, index=datetime_idx )
+print("DatetimeIndexed DataFrame:\n",df)
+print()
+
 # TimedeltaIndex
 # PeriodIndex
