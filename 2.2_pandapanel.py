@@ -39,3 +39,12 @@ data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)),
    'Item2' : pd.DataFrame(np.random.randn(4, 2))}
 p = pd.Panel(data)
 print(p['Item1'])
+
+# Selecting the Data from Panel using major_axis
+# creating an empty panel
+import pandas as pd
+import numpy as np
+data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)),
+   'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+p = pd.Panel(data)
+print(p.major_xs(1))
