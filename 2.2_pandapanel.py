@@ -30,3 +30,12 @@ print(p)
 import pandas as pd
 p = pd.Panel()
 print(p)
+
+# Selecting the Data from Panel using Items
+# creating an empty panel
+import pandas as pd
+import numpy as np
+data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)),
+   'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+p = pd.Panel(data)
+print(p['Item1'])
