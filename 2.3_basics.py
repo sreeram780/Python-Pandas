@@ -42,3 +42,20 @@ print(s)
 print("First 5 elements of the Series:\n", s.head())
 print("\nLast 3 elements of the Series:\n", s.tail(3))
 print("\nDescriptive statistics of the Series:\n", s.describe())
+
+import pandas as pd
+import numpy as np
+# Create a Dictionary of series
+data = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+        'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+        'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+# Create a DataFrame
+df = pd.DataFrame(data)
+print("Our data frame is:\n")
+print(df)
+# Using basic methods
+print("\nFirst 5 rows of the DataFrame:\n", df.head())
+print("\nLast 3 rows of the DataFrame:\n", df.tail(3))
+print("\nInfo of the DataFrame:")
+df.info()
+print("\nDescriptive statistics of the DataFrame:\n", df.describe())
