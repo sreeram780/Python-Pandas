@@ -31,3 +31,14 @@ print("Shape:", df.shape)
 print("Number of dimensions:", df.ndim)
 print("Size:", df.size)
 print("Is empty:", df.empty)
+
+import pandas as pd
+import numpy as np
+# Create a Series with random numbers
+s = pd.Series(np.random.randn(10))
+print("Series:")
+print(s)
+# Using basic methods
+print("First 5 elements of the Series:\n", s.head())
+print("\nLast 3 elements of the Series:\n", s.tail(3))
+print("\nDescriptive statistics of the Series:\n", s.describe())
