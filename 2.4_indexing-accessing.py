@@ -25,6 +25,23 @@ index = ['a','b','c','d','e','f','g','h'], columns = ['A', 'B', 'C', 'D'])
 # Select range of rows for all columns
 print(df.loc['c':'e'])
 
-# Integer Position-Based Indexing with .iloc
+#######Integer Position-Based Indexing with .iloc
+    # import the pandas library and aliasing as pd
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(8, 4), columns = ['A', 'B', 'C', 'D'])
+print("Original DataFrame:\n", df)
+# select all rows for a specific column
+print('\nResult:\n',df.iloc[:4])
+
+df = pd.DataFrame(np.random.randn(8, 4), columns = ['A', 'B', 'C', 'D'])
+# Integer slicing
+print(df.iloc[:4])
+print(df.iloc[1:5, 2:4])
+
+df = pd.DataFrame(np.random.randn(8, 4), columns = ['A', 'B', 'C', 'D'])
+# Slicing through list of values
+print(df.iloc[[1, 3, 5], [1, 3]])
 
 # Indexing with Brackets []
