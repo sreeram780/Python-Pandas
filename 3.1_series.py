@@ -17,3 +17,12 @@ print(s)
 data = np.array(['a','b','c','d'])
 s = pd.Series(data,index=[100,101,102,103])
 print("Output:\n",s)
+
+# Create a Series from Python Dictionary
+data = {'a' : 0., 'b' : 1., 'c' : 2.}
+s = pd.Series(data)
+print(s)
+
+data = {'a' : 0., 'b' : 1., 'c' : 2.}
+s = pd.Series(data,index=['b','c','x','a'])
+print(s)
