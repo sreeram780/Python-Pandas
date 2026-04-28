@@ -26,3 +26,7 @@ print(s)
 data = {'a' : 0., 'b' : 1., 'c' : 2.}
 s = pd.Series(data,index=['b','c','x','a'])
 print(s)
+
+# Create a Series from Scalar
+s = pd.Series(5, index=[0, 1, 2, 3])
+print(s)
