@@ -6,3 +6,14 @@ s = pd.Series()
 
 # Display the result
 print('Resultant Empty Series:\n',s)
+
+# Create a Series from ndarray
+import pandas as pd
+import numpy as np
+data = np.array(['a','b','c','d'])
+s = pd.Series(data)
+print(s)
+
+data = np.array(['a','b','c','d'])
+s = pd.Series(data,index=[100,101,102,103])
+print("Output:\n",s)
