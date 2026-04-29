@@ -22,3 +22,8 @@ print('Values after slicing the Series:', result, sep='\n')
 s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
 #retrieve the first three element
 print(s[:3])
+
+# Example: Slicing the Last Three Elements from a Series
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+#retrieve the last three element
+print(s[-3:])
