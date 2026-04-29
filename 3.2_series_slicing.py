@@ -15,6 +15,10 @@ s = pd.Series(data)
 print('Original Series:',s, sep='\n')
 # Slice the range of values
 result = s[1:3]
-
 # Display the output
 print('Values after slicing the Series:', result, sep='\n')
+
+# Example: Slicing the First Three Elements from a Series
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+#retrieve the first three element
+print(s[:3])
