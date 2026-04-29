@@ -27,3 +27,9 @@ print(s[:3])
 s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
 #retrieve the last three element
 print(s[-3:])
+
+# # Slicing a Series by Label
+# Example: Slicing Group of elements from a Series using the Labels
+s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+# Slice multiple elements
+print(s['a':'d'])
