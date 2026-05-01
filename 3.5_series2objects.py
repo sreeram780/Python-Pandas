@@ -27,3 +27,10 @@ s = pd.Series([1, 2, 3], index=['a', 'b', 'c'])
 result = s.to_dict()
 print("Output:",result)
 print("Output Type:", type(result))
+
+# Create a Pandas Series
+s = pd.Series([1, 2, 3], index=['a', 'b', 'c'])
+# Convert Series to a Pandas DataFrame
+result = s.to_frame(name='Numbers')
+print("Output:\n",result)
+print("Output Type:", type(result))
