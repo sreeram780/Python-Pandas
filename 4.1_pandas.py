@@ -35,3 +35,10 @@ df1 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b'])
 df2 = pd.DataFrame(data, index=['first', 'second'], columns=['a', 'b1'])
 print(df1)
 print(df2)
+
+# Create a DataFrame from Dict of Series
+
+d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+   'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+df = pd.DataFrame(d)
+print(df)
