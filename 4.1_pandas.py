@@ -21,3 +21,8 @@ print(df)
 data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
 df = pd.DataFrame(data, index=['rank1','rank2','rank3','rank4'])
 print(df)
+
+# Create a DataFrame from List of Dicts
+data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+df = pd.DataFrame(data)
+print(df)
