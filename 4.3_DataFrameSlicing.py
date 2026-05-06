@@ -79,3 +79,12 @@ df = df.rename(index={'x': 'r1', 'y':'r2', 'z':'r3'})
 # Display modified DataFrame
 print("Modified DataFrame:")
 print(df)
+
+# Adding a New Column Directly
+# Create a DataFrame
+df = pd.DataFrame({'A': [1, 2, 3],'B': [4, 5, 6]})
+# Add a new column 'C' with values
+df['C'] = [7, 8, 9]
+# Display updated DataFrame
+print("DataFrame after adding a new column 'C':")
+print(df)
