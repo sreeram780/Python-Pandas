@@ -88,3 +88,12 @@ df['C'] = [7, 8, 9]
 # Display updated DataFrame
 print("DataFrame after adding a new column 'C':")
 print(df)
+
+# Inserting a Column at a Specific Position
+# Create a DataFrame
+df = pd.DataFrame({'A': [1, 2, 3],'B': [4, 5, 6]})
+# Insert a new column 'D' at position 1
+df.insert(1, 'D', [10, 11, 12])
+# Display updated DataFrame
+print("DataFrame after inserting column 'D' at position 1:")
+print(df)
